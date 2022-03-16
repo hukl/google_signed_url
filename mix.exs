@@ -4,12 +4,12 @@ defmodule GoogleSignedUrl.MixProject do
   def project do
     [
       app: :google_signed_url,
-      version: "1.0.0",
+      version: "1.0.1",
       description: "Generates signed URLs for Google Cloud Storage without depending on gcloud/gsutil",
       source_url: "https://github.com/hukl/google_signed_url",
       homepage_url: "https://github.com/hukl/google_signed_url",
       package: [
-        licenses: ["CC-BY-4.0"],
+        licenses: ["MIT"],
         links: %{"GitHub" => "https://github.com/hukl/google_signed_url"}
       ],
       elixir: "~> 1.13",
