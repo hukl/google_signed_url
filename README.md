@@ -1,6 +1,10 @@
 # GoogleSignedUrl
 
-**TODO: Add description**
+Generates signed URLs for Google Cloud Storage without depending on gcloud/gsutil.
+Only thing required is a valid service account credentials file.
+
+Based on Googles Reference implementation in Python:
+https://cloud.google.com/storage/docs/access-control/signing-urls-manually
 
 ## Installation
 
