@@ -8,7 +8,9 @@ https://cloud.google.com/storage/docs/access-control/signing-urls-manually
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+Hex.pm: https://hex.pm/packages/google_signed_url
+
+The package can be installed
 by adding `google_signed_url` to your list of dependencies in `mix.exs`:
 
 ```elixir
