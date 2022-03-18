@@ -32,7 +32,7 @@ defmodule GoogleSignedUrl do
   @type signing_options :: [signing_option]
 
   @spec signed_url(String.t(), String.t(), String.t(), String.t(), signing_options) :: String.t()
-  def signed_url(cred_file, bucket, object_name, method, opts) do
+  def signed_url(cred_file, bucket, object_name, method, opts \\ []) do
     default_opts = [
       expires: 604800,
       headers: %{},
