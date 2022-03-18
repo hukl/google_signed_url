@@ -10,13 +10,19 @@ defmodule GoogleSignedUrl do
   Based on Googles Reference implementation in Python:
   https://cloud.google.com/storage/docs/access-control/signing-urls-manually
 
+      signing_option() ::
+        {:expires, integer()}
+        | {:headers, map()}
+        | {:queries, map()}
+        | {:subresource, String.t() | nil}
+
   ## Examples
       iex> GoogleSignedUrl.signed_url(
         "path/to/cred_file",
         "bucketname",
         "object_name",
         "PUT",
-        3600,
+        expires: 3600,
         headers: %{"x-goog-test" => "value"},
         queries: %{"key" => "value"},
         subresource: "somestring"
