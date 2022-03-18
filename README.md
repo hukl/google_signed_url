@@ -16,7 +16,7 @@ by adding `google_signed_url` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:google_signed_url, "~> 1.0.1"}
+    {:google_signed_url, "~> 1.0"}
   ]
 end
 ```
